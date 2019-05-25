@@ -12,7 +12,6 @@ import yottabyte.mysqlmodel.FrontMysql;
 
 @Mapper
 public interface FrontendDAO {
-
     @Insert("insert into FRONTENDTEST(name, `group`) value(#{frontend.name}, #{frontend.group})")
     void inserData(@Param("frontend")FrontMysql frontMysql);
 }

@@ -25,9 +25,7 @@ public class Controller {
 
     @RequestMapping( value = "/frontend/kpi", name = "frontend架构讲解", method = RequestMethod.POST)
     public String test(@RequestBody FrontendRequest request){
-
         frontendService.insertMysql(request);
-
         return "你的id是：" + gson.toJson(request);
     }
 

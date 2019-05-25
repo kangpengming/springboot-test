@@ -23,12 +23,10 @@ public class FrontendService {
     private String group;
 
     public void insertMysql(FrontendRequest frontendRequest){
-
         FrontMysql frontMysql = new FrontMysql();
         frontMysql.setGroup(group);
         frontMysql.setName(frontendRequest.getName());
         frontendDAO.inserData(frontMysql);
-
     }
 
 }
